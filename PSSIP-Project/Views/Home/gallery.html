@@ -1,0 +1,33 @@
+
+<h1 align="center" >
+   <p>Marshmellow pictures, pictures, pictures...
+Tasty... Yummy... </p>
+
+</h1>
+
+<div align="right">
+
+    <label ng-repeat="extension in extensionsArray">
+        {{extension.name}}
+        <input type="checkbox" ng-model="extension.isChecked">
+    </label>
+</div>
+
+<div ng-repeat="img in Images | filter:filterByExtension" class="imageGalleryClass" >
+    <p>
+        
+        
+        {{img.Name}}
+        <br>
+
+        <img class="imageGalleryClassImg" ng-src="{{img.Url}}" ng-mouseover="toggleTooltip()" ng-mouseout="hideTooltip()" ng-click="showFullImage(img.Url)" >
+
+        <!--getNumber({img.Star}}) track by $index    {$index+1}} 
+            ng-repeat="i in getNumber(img.Star) track by $index"
+            ng-repeat="i in range.slice(0,5) track by $index"
+            -->
+        <div ng-repeat="i in getNumber(img.Star) track by $index" class="imageGalleryClassStar"><img class="star-image" src="Img/star-zephir.png">&nbsp&nbsp</div>
+
+        <p><input type="button" value="Удалить картинку" ng-click="remove(img.Url)" /></p>
+    </p>
+</div>

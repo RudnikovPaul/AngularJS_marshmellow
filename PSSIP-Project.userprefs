@@ -1,0 +1,13 @@
+﻿<Properties StartupItem="PSSIP-Project/PSSIP-Project.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PSSIP-Project/Views/Home/main.html">
+    <Files>
+      <File FileName="PSSIP-Project/Script/main.js" Line="6" Column="34" />
+      <File FileName="PSSIP-Project/Views/Home/main.html" Line="6" Column="5" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

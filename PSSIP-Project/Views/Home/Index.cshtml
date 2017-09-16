@@ -1,0 +1,49 @@
+﻿<!DOCTYPE>
+<html ng-app="gallery">
+<head>
+    <base href="/">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    
+    <title>Marshmellows</title>
+    <link href="~/Style/style.css" rel="stylesheet" type="text/css"/>
+
+    <script src="~/Script/angular.min.js"></script>
+    <script src="~/Script/angular-route.min.js"></script>
+    <script src="~/Script/main.js"></script>
+    
+</head>
+
+<body style="background-color:#FFD6FD">
+    <div id="container">
+        <div id="header">
+           
+            <img src="~/Img/header.jpg">
+            
+        </div>
+      
+      <div style="font-size:large">
+            <ul>
+                <li> <a href="/Marshmellows/main">Главная</a> </li>
+                <li> <a href="/Marshmellows/gallery">Галерея</a> </li>
+                <li> <a href="/Marshmellows/addNewImage">Добавление картинок</a> </li>
+            </ul>   
+        </div>
+  
+    
+        <div ng-view id="content">
+            The page you queryed is loading...
+        </div>
+        
+    </div>
+    
+    <div class="footer">
+        &nbsp
+        <br><br><br>
+        <strong>Developers:</strong> <br>Rudnikov Paul<br><br>
+
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <strong> Study group:</strong> 444601 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <strong>favorite color:</strong> <div class="fill-color">Blue</div>
+    </div>
+    
+</body>
+</html>
